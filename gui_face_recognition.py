@@ -1,7 +1,7 @@
 import cv2
 import tkinter as tk
 from PIL import Image, ImageTk
-from face_recognition_engine import SimpleFacerec
+from face_recognition_engine import FacialRecognizer
 import os
 
 
@@ -10,7 +10,7 @@ class FaceRecognitionApp:
         self.root = root
         self.root.title("Face Recognition App")
 
-        self.sfr = SimpleFacerec()
+        self.sfr = FacialRecognizer()
         # Create the face_encodings directory if it doesn't exist
         face_encodings_dir = "face_encodings"
         if not os.path.exists(face_encodings_dir):
