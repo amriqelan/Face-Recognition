@@ -11,11 +11,7 @@ class FaceRecognitionApp:
         self.root.title("Face Recognition App")
 
         self.sfr = FacialRecognizer()
-        # Create the face_encodings directory if it doesn't exist
-        face_encodings_dir = "face_encodings"
-        if not os.path.exists(face_encodings_dir):
-            os.makedirs(face_encodings_dir)
-
+       
         self.sfr.load_encoding_images("images/")
         self.sfr.load_encoding_data()
 
