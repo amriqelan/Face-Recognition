@@ -1,6 +1,4 @@
-# Face-Recognition
-
-Face Recognition App
+# Face Recognition
 The Face Recognition App is a Python-based application that utilizes the face_recognition library and OpenCV to perform real-time face recognition on a video stream. The app allows you to capture faces, associate them with names, and recognize those faces in subsequent frames of the video.
 
 # Notes
